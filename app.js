@@ -12,7 +12,7 @@ var app = express();
 
 // Intégration de la bdd
 var connectionString =
-  "mongodb+srv://delacrepaul:O5zygBvtTbMir4zV@iut.ujrbwia.mongodb.net/test";
+  "";
 var mongoDB = process.env.MONGODB_URI || connectionString;
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.Promise = global.Promise;
